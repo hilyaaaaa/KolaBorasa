@@ -111,58 +111,153 @@ body {
   color: #0a400c;
   text-align: center;
   padding: 10px 0;
-  margin-top: 93px;
 
 }
 .login-container {
-  margin: 170px auto;
-  border: #0a400c 4px solid;
-  border-radius: 50px;
-  width: 1000px;
-  height: 700px;
+  width: 800px;
+  height: 600px ;
+  margin: 150px auto;
+  padding: 20px;
+  border: 3px solid #0a400c;
+  border-radius: 10px;
+  background-color: #fefae0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
-.login-form {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: relative;
-  height: 100%;
-  padding: 50px;
-  margin-top: 10%;
-}
-.login-form h2 {
-  margin-bottom: 20px;
+.login-text {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 30px;
   color: #0a400c;
+  font-size: 40px;
 }
-.login-form label {
+.login-container label  {
+  display: block;
   margin-bottom: 10px;
-  font-weight: bold;
   color: #0a400c;
+  font-size: 18px;
+  margin-top: 10px;
 }
-.login-form input {
-  width: 300px;
+.login-container form {
+  margin-top: 80px;
+  text-align: left;
+  margin-left: 30px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 40%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.login-form button {
-  padding: 10px 20px;
+.login-container button {
+  width: 40%;
+  padding: 10px;
   background-color: #819067;
-  color: #0a400c;
+  color: #fefae0;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 80px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  display: block;
 }
-.login-form button:hover {
+.login-container button:hover {
   background-color: #0a400c;
+}
+.login-container .checkbox {
+  align-items: center;
+  margin-top: 10px;
+  color: #0a400c;
+}
+.login-container .checkbox input {
+  margin-right: 10px;
+}
+.login-container .checkbox label {
+  margin: 0;
+}
+.login-container img {
+  width: 400px;
+  height: 595px;
+  position: absolute;
+  top: 153px;
+  right: 362px;
+  border-radius: 10px;
+}
+.signup-container {
+  width: 800px;
+  height: 600px ;
+  margin: 150px auto;
+  padding: 20px;
+  border: 3px solid #0a400c;
+  border-radius: 10px;
+  background-color: #fefae0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.signup-text {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  color: #0a400c;
+  font-size: 40px;
+}
+.signup-container label  {
+  display: block;
+  margin-bottom: 10px;
+  color: #0a400c;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.signup-container form {
+  margin-top:60px;
+  text-align: left;
+  margin-left: 30px;
+}
+.signup-container input{
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.signup-container input[type="checkbox"] {
+  width: auto;
+}
+.signup-container button {
+  width: 40%;
+  padding: 10px;
+  background-color: #819067;
   color: #fefae0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  display: block;
 }
-.checkbox {
-  
+.signup-container button:hover {
+  background-color: #0a400c;
 }
- 
+.signup-container .checkbox {
+  align-items: center;
+  margin-top: 10px;
+  color: #0a400c;
+}
+.signup-container .checkbox input {
+  margin-right: 10px;
+}
+.signup-container .checkbox label {
+  margin: 0;
+}
+.signup-container img {
+  width: 400px;
+  height: 595px;
+  position: absolute;
+  top: 153px;
+  right: 362px;
+  border-radius: 10px;
+}
 
