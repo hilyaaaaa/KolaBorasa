@@ -115,14 +115,11 @@
   display: relative;
 
 }
-
-        .footer-main {
+.footer-main {
   background-color: #b1ab86;
   color: #0a400c;
   text-align: center;
   padding: 10px 0;
-  margin-top: 93px;
-
 }
 
         /* Animations */
