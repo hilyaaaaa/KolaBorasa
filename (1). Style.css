@@ -110,8 +110,9 @@ body {
   background-color: #b1ab86;
   color: #0a400c;
   text-align: center;
-  padding: 10px 0;
-
+  padding: 10px;
+  position: relative;
+  margin-top: 90px;
 }
 .login-container {
   width: 800px;
