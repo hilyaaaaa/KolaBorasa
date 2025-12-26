@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="(1). Style.css" />
+    <title>Kolaborasa - Login</title>
+    <link rel="stylesheet" href="(1). Style.css">
 </head>
 <body>
-    <nav>
-      <div class="navbar">
-        <h1>Kolaborasa</h1>
-        <div>
-          <ul>
-            <li><a href="2. Login Page.html">Login</a></li>
-            <li><a href="3.Signup Page.html">Sign Up</a></li>
-          </ul>
+    <nav class="navbar">
+        <div class="logo">Kolaborasa</div>
+        <div class="nav-links">
+            <a href="2. Login Page.html">Login</a>
+            <a href="3.Signup Page.html">Sign Up</a>
         </div>
-      </div>
     </nav>
-    <div class="login-container">
-        <h2 class="login-text">Welcome back!</h2>
-        <img src="BG2.jpeg" alt="">
-        <form action="#" method="post" class="login-form">
-            <label for="username">Nama</label>
-            <input type="text" id="username" name="username" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-form">
+                <h1>Welcome Back!</h1>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label>Nama</label>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password">
+                    </div>
+                    <div class="options">
+                        <label><input type="checkbox"> Remember Me</label>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                </form>
+                <p class="signup-text">Don't have an Account? <a href="3.Signup Page.html">Sign up</a></p>
+            </div>
             
-            <label class="checkbox">
-            <input type="checkbox" name="remember">Remember Me
-            
-            <button type="submit">Login</button>
-        </form>
+            <div class="login-image"></div>
+        </div>
     </div>
-    <footer class="footer-main">
-      <div class="footer-text">
-        <p>© 2025 Kolaborasa. All rights reserved.</p>
-      </div>
+    
+    <footer class="main-footer">
+        &copy; 2025 Kolaborasa. All rights reserved.
     </footer>
+    <script src="Script.js"></script>
 </body>
 </html>
