@@ -11,7 +11,7 @@ if (loginForm) {
 
         // Validasi: Cek apakah ada field yang kosong
         if (name === "" || password === "") {
-            alert("Maaf, semua kolom harus diisi!");
+            alert("Maaf, semua kolom harus terisi!");
         } else {
             // Jika terisi semua, arahkan ke home
             alert("Login Berhasil! Selamat datang, " + name);

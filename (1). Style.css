@@ -8,7 +8,7 @@
 body {
     /* Ganti background.jpg dengan path gambar Anda */
     background-size: cover;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     background-color: #B1AB86;
@@ -25,10 +25,13 @@ body {
     background-color:#B1AB86;
 }
 
-.logo {
+.logo-text {
     font-size: 24px;
     font-weight: bold;
-    color: #2d4628; /* Hijau tua sesuai desain */
+    color: #2d4628;
+    font-style: none;
+    font: optional;
+    text-decoration: none;
 }
 
 .nav-links a {
@@ -113,7 +116,23 @@ body {
 .btn-login:hover {
     background-color: #6e7f5c;
 }
-
+.btn-google {
+    width: 100%;
+    padding: 9px;
+    margin-top: 9px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .signup-text {
     margin-top: 15px;
     font-size: 12px;
@@ -236,28 +255,6 @@ body {
     border-left: 0px solid #1e331a;
 }
 
-/* Footer Copyright */
-.main-footer {
-    text-align: center;
-    padding: 15px;
-    color: #1e331a;
-    font-size: 14px;
-    background: #B1AB86; /* Warna cream transparan seperti di gambar */
-}
-
-/* Responsiveness */
-@media (max-width: 900px) {
-    .login-card {
-        flex-direction: column;
-        height: auto;
-    }
-    .login-image {
-        border-left: none;
-        border-top: 2px solid #2d4628;
-        height: 200px;
-    }
-}
-
 /* Layout Utama */
 .container {
     flex: 1;
@@ -268,7 +265,7 @@ body {
 
 /* Card Transparan */
 .welcome-card {
-    background: #B1AB86;
+    background: rgba(177, 171, 134, 0.5); /* Warna cream transparan */
     border: 3px solid #2d4628;
     border-radius: 10px;
     overflow: hidden;
@@ -300,4 +297,144 @@ body {
 .btn-action:hover {
     background-color: #2d4628;
     transition: 0.3s;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .login-card {
+        flex-direction: column;
+        height: auto;
+    }
+    .login-image {
+        border-left: none;
+        border-top: 2px solid #2d4628;
+        height: 200px;
+    }
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Styling Footer Utama */
+.main-footer {
+    background-color: #b7b390; /* Warna dasar sesuai gambar */
+    padding: 60px 80px 30px 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e331a;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Bagian Brand */
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo img {
+    width: 50px; /* Sesuaikan ukuran logo */
+    margin-bottom: 15px;
+}
+
+.brand-name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.brand-slogan {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Kolom Link */
+.footer-links-wrapper {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #1e331a;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+/* Garis Pembatas */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(30, 51, 26, 0.2);
+    margin-bottom: 30px;
+}
+
+/* Bagian Bawah */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 20px; /* Ukuran ikon sosmed */
+    filter: brightness(0.2); /* Membuat ikon berwarna gelap */
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-links-wrapper {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .main-footer {
+        padding: 40px 20px;
+    }
 }

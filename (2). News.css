@@ -1,52 +1,55 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-body{
-    background-color: #fefae0;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #729660;
 }
 .navbar {
-  z-index: 2;
-  background-color: #b1ab86;
-  color: #0a400c;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.navbar h1 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  opacity: 100%;
-}
-.navbar ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-.navbar ul li a {
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #0a400c;
-  padding: 8px 0;
-  transition: all;
-  transition-duration: 300ms;
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-.navbar ul li a:hover {
-  border-bottom: 1px solid #0a400c;
-  color: #0a400c;
+    background: linear-gradient(135deg, #b1ab86 0%, #a8a072 100%);
+    color: #0a400c;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.navbar h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0a400c;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar ul li a:hover {
+    border-bottom-color: #0a400c;
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
 .card-container{
     display: flex;
     justify-content: center;
