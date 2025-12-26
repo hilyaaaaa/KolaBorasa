@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #B1AB86;
-    background-image: linear-gradient(rgba(177, 171, 134, 0.3), rgba(177, 171, 134, 0.3)), url('BG1.jpg');
+    background-image: linear-gradient(rgba(177, 171, 134, 0.5), rgba(177, 171, 134, 0.5)), url('BG1.jpg');
     
 }
 
@@ -204,7 +204,7 @@ body {
     width: 100%;
     padding: 12px;
     background-color: #8da077;
-    border: 1px solid #6e7f5c;
+    border: 0px solid #6e7f5c;
     border-radius: 6px;
     color: white;
     font-weight: bold;
@@ -256,4 +256,48 @@ body {
         border-top: 2px solid #2d4628;
         height: 200px;
     }
+}
+
+/* Layout Utama */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Transparan */
+.welcome-card {
+    background: #B1AB86;
+    border: 3px solid #2d4628;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+/* Detail Welcome Card */
+.welcome-card {
+    padding: 60px;
+    text-align: center;
+    color: #2d4628;
+    max-width: 600px;
+}
+.welcome-card h1 { font-size: 32px; margin-bottom: 15px; }
+.welcome-card p { font-style: italic; margin-bottom: 30px; font-size: 18px; }
+
+.btn-action {
+    width: 100%;
+    padding: 10px;
+    background-color: #8da077;
+    border: 0px solid #2d4628;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+.btn-action.small { width: auto; padding: 10px 30px; 
+}
+.btn-action:hover {
+    background-color: #2d4628;
+    transition: 0.3s;
 }

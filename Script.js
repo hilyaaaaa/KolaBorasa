@@ -44,3 +44,13 @@ if (signupForm) {
         }
     });
 }
+
+// Navigasi dari Home ke Login saat klik Get Started
+const btnGetStarted = document.getElementById('btnGetStarted');
+
+if (btnGetStarted) {
+    btnGetStarted.addEventListener('click', function() {
+        // Anda bisa menambahkan efek transisi di sini jika mau
+        window.location.href = "2. Login Page.html"; 
+    });
+}
