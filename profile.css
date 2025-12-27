@@ -1,0 +1,226 @@
+/* Warna dasar diambil dari contoh dashboard hijau yang umum digunakan untuk UI modern [web:3][web:8] */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f0cf;      /* krem muda */
+  color: #333;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 80px;
+  background-color: #f0ebc5;
+  border-right: 1px solid #c7c29a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #205728;                 /* hijau tua */
+  margin-bottom: 40px;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e2ddba;
+  cursor: pointer;
+}
+
+.icon-btn.active {
+  background-color: #205728;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background-color: #d0c89a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.top-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #114018;
+  font-weight: 500;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Card */
+.profile-card {
+  width: 60%;
+  max-width: 720px;
+  background-color: #e5debc;
+  border-radius: 10px;
+  padding: 24px 40px 32px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.welcome {
+  font-weight: 600;
+  color: #205728;
+}
+
+.date {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Profile summary */
+.profile-summary {
+  display: flex;
+  align-items: center;
+  background-color: #f6f0d3;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.profile-text h2 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.profile-text p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Form */
+.profile-form .form-group {
+  margin-bottom: 16px;
+}
+
+.profile-form label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #f6f0d3;
+  font-size: 14px;
+}
+
+.birth-row {
+  display: flex;
+  gap: 12px;
+}
+
+.birth-row input {
+  flex: 1;
+}
+
+/* Gender field */
+.gender-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gender-field input {
+  flex: 1;
+}
+
+.gender-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 2px solid #2f6b34;
+  display: inline-block;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btn {
+  min-width: 90px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-cancel {
+  background-color: #c9c29d;
+  color: #333;
+}
+
+.btn-save {
+  background-color: #2f6b34;
+  color: #fff;
+}
+
+/* Footer */
+.footer-main {
+    background: #b1ab86;
+    color: #0a400c;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
