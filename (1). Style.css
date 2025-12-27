@@ -1,264 +1,440 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
-  background-color: #fefae0;
+    /* Ganti background.jpg dengan path gambar Anda */
+    background-size: cover;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #B1AB86;
+    background-image: linear-gradient(rgba(177, 171, 134, 0.5), rgba(177, 171, 134, 0.5)), url('BG1.jpg');
+    
 }
+
+/* Navbar */
 .navbar {
-  z-index: 2;
-  background-color: #b1ab86;
-  color: #0a400c;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.navbar h1 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  opacity: 100%;
-}
-.navbar ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-.navbar ul li a {
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #0a400c;
-  padding: 8px 0;
-  transition: all;
-  transition-duration: 300ms;
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-.navbar ul li a:hover {
-  border-bottom: 1px solid #0a400c;
-  color: #0a400c;
-}
-.hero {
-    object-fit: cover;
-    height: 100vh;
-    display: absolute;
-    justify-content: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
     align-items: center;
-    text-align: center;
+    background-color:#B1AB86;
 }
-.hero-text h2 {
-  font-size: 33px;
-  margin-bottom: 20px;
-  color: #0a400c;
-}
-.hero-text p {
-  font-size: 20px;
-}
-.hero-text button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #819067;
-  color: #0a400c;
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s ease;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d4628;
+    font-style: none;
+    font: optional;
+    text-decoration: none;
 }
-.hero-text button a {
-  text-decoration: none;
-  color: #fefae0;
-  font-weight: 800;
-}
-.hero-text button:hover {
-  background-color: #0a400c;
-  color: #fefae0;
-  cursor: pointer;
-}
-.hero img {
-  width: 100%;
-  height: 112vh;
-  overflow: hidden;
-  object-fit: cover;
-  opacity: 50%;
-  justify-content: relative;
-  align-content: center;
-  display: relative;
 
+.nav-links a {
+    text-decoration: none;
+    color: #2d4628;
+    margin-left: 20px;
+    font-weight: 600;
 }
-.hero-text{
-    border: #0a400c 3.5px solid;
-    padding: 20px;
-    border-radius: 10px;
-    align-content: center;
-    text-align: center;
-    width: 600px;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 33%;
+
+/* Container & Card */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.footer-main {
-  background-color: #b1ab86;
-  color: #0a400c;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  margin-top: 90px;
+
+.login-card {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.2); /* Efek Glassmorphism */
+    backdrop-filter: blur(12px);
+    border: 4px solid #2d4628;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-.login-container {
-  width: 800px;
-  height: 600px ;
-  margin: 150px auto;
-  padding: 20px;
-  border: 3px solid #0a400c;
-  border-radius: 10px;
-  background-color: #fefae0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+
+/* Bagian Form */
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1e331a;
 }
-.login-text {
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 5px;
-  margin-left: 30px;
-  color: #0a400c;
-  font-size: 40px;
+
+.login-form h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
 }
-.login-container label  {
-  display: block;
-  margin-bottom: 10px;
-  color: #0a400c;
-  font-size: 18px;
-  margin-top: 10px;
+
+.input-group {
+    margin-bottom: 15px;
 }
-.login-container form {
-  margin-top: 80px;
-  text-align: left;
-  margin-left: 30px;
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
-.login-container input[type="text"],
-.login-container input[type="password"] {
-  width: 40%;
-  padding: 10px;
-  margin-bottom: px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
 }
-.login-container button {
-  width: 40%;
-  padding: 10px;
-  background-color: #819067;
-  color: #fefae0;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 80px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-  display: block;
+
+.options {
+    font-size: 12px;
+    margin-bottom: 20px;
 }
-.login-container button:hover {
-  background-color: #0a400c;
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #8da077; /* Warna hijau tombol */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
-.login-container .checkbox {
-  align-items: center;
-  margin-top: 10px;
-  color: #0a400c;
+
+.btn-login:hover {
+    background-color: #6e7f5c;
 }
-.login-container .checkbox input {
-  margin-right: 10px;
-}
-.login-container .checkbox label {
-  margin: 0;
-}
-.login-container img {
-  width: 400px;
-  height: 595px;
-  position: absolute;
-  top: 153px;
-  right: 362px;
-  border-radius: 10px;
-}
-.signup-container {
-  width: 800px;
-  height: 600px ;
-  margin: 150px auto;
-  padding: 20px;
-  border: 3px solid #0a400c;
-  border-radius: 10px;
-  background-color: #fefae0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+.btn-google {
+    width: 100%;
+    padding: 9px;
+    margin-top: 9px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .signup-text {
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 5px;
-  margin-left: 30px;
-  color: #0a400c;
-  font-size: 40px;
-}
-.signup-container label  {
-  display: block;
-  margin-bottom: 10px;
-  color: #0a400c;
-  font-size: 18px;
-  margin-top: 10px;
-}
-.signup-container form {
-  margin-top:60px;
-  text-align: left;
-  margin-left: 30px;
-}
-.signup-container input{
-  width: 40%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.signup-container input[type="checkbox"] {
-  width: auto;
-}
-.signup-container button {
-  width: 40%;
-  padding: 10px;
-  background-color: #819067;
-  color: #fefae0;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-  display: block;
-}
-.signup-container button:hover {
-  background-color: #0a400c;
-}
-.signup-container .checkbox {
-  align-items: center;
-  margin-top: 10px;
-  color: #0a400c;
-}
-.signup-container .checkbox input {
-  margin-right: 10px;
-}
-.signup-container .checkbox label {
-  margin: 0;
-}
-.signup-container img {
-  width: 400px;
-  height: 595px;
-  position: absolute;
-  top: 153px;
-  right: 362px;
-  border-radius: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
 }
 
+.signup-text a {
+    color: #2d4628;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Bagian Gambar Kanan */
+.login-image {
+    flex: 1;
+    background: url('BG2.jpeg') no-repeat center center;
+    background-size: cover;
+    border-left: 0px solid #2d4628;
+}
+
+
+/* Container */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.2); /* Efek Glassmorphism */
+    backdrop-filter: blur(12px);
+    border: 3px solid #1e331a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+.card-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1e331a;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.btn-signup {
+    width: 100%;
+    padding: 12px;
+    background-color: #8da077;
+    border: 0px solid #6e7f5c;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-signup:hover {
+    background-color: #7a8c66;
+}
+
+.footer-link {
+    margin-top: 15px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer-link a {
+    color: #1e331a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Gambar Kanan */
+.card-image {
+    flex: 1;
+    background: url('BG3.jpeg') no-repeat center center;
+    background-size: cover;
+    border-left: 0px solid #1e331a;
+}
+
+/* Layout Utama */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Transparan */
+.welcome-card {
+    background: rgba(177, 171, 134, 0.5); /* Warna cream transparan */
+    border: 3px solid #2d4628;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+/* Detail Welcome Card */
+.welcome-card {
+    padding: 60px;
+    text-align: center;
+    color: #2d4628;
+    max-width: 600px;
+}
+.welcome-card h1 { font-size: 32px; margin-bottom: 15px; }
+.welcome-card p { font-style: italic; margin-bottom: 30px; font-size: 18px; }
+
+.btn-action {
+    width: 100%;
+    padding: 10px;
+    background-color: #8da077;
+    border: 0px solid #2d4628;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+.btn-action.small { width: auto; padding: 10px 30px; 
+}
+.btn-action:hover {
+    background-color: #2d4628;
+    transition: 0.3s;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .login-card {
+        flex-direction: column;
+        height: auto;
+    }
+    .login-image {
+        border-left: none;
+        border-top: 2px solid #2d4628;
+        height: 200px;
+    }
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Styling Footer Utama */
+.main-footer {
+    background-color: #b7b390; /* Warna dasar sesuai gambar */
+    padding: 60px 80px 30px 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e331a;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Bagian Brand */
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo img {
+    width: 50px; /* Sesuaikan ukuran logo */
+    margin-bottom: 15px;
+}
+
+.brand-name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.brand-slogan {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Kolom Link */
+.footer-links-wrapper {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #1e331a;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+/* Garis Pembatas */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(30, 51, 26, 0.2);
+    margin-bottom: 30px;
+}
+
+/* Bagian Bawah */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 20px; /* Ukuran ikon sosmed */
+    filter: brightness(0.2); /* Membuat ikon berwarna gelap */
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-links-wrapper {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .main-footer {
+        padding: 40px 20px;
+    }
+}
