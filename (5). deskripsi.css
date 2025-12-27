@@ -1,3 +1,4 @@
+/*Bagian navbar*/
 * {
     margin: 0;
     padding: 0;
@@ -50,53 +51,118 @@ body {
     background: rgba(255,255,255,0.2);
     border-radius: 5px;
 }
-.card-container {
+/*Teks*/
+.text-card {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fefae0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Judul */
+.text-card h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #6b8e23;
+    font-size: 32px;
+}
+
+/* Container gambar */
+.card-picture {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;        /* jarak antar card */
-    padding: 120px 40px 60px; /* jarak dari navbar */
+    margin-bottom: 25px;
 }
 
-
-.card{
-    width: 325px;
-    background-color: #fefae0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 15px;
-}
-
-.card img{
+/* Gambar */
+.card-picture img {
     width: 100%;
-    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.card-content{
-    padding: 16px;
-}
-.card-content h3{
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-.card-content p{
-    color: #666;
+/* Teks paragraf */
+.text {
     font-size: 15px;
-    line-height: 1.3;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
 }
-.card-content .btn{
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #819067;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
+
+.text p {
+    margin-bottom: 20px;
+}
+
+/*Bagian Progress*/
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    max-width: 900px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Step */
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+}
+
+/* Circle */
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    z-index: 2;
+}
+
+/* Text */
+.progress-step span {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Line */
+.line {
+    flex: 1;
+    height: 4px;
+    background-color: #dcdcdc;
+    margin: 0 5px;
+}
+
+/* Completed */
+.completed .circle {
+    background-color: #6b8e23;
     color: #fff;
 }
 
+.line.completed {
+    background-color: #6b8e23;
+}
 
-/* Styling Footer Utama */
+/* Active */
+.active .circle {
+    background-color: #b7b390;
+    color: #1e331a;
+    border: 3px solid #6b8e23;
+}
+
+
+/*Bagian Footer*/
 .main-footer {
     background-color: #b7b390; /* Warna dasar sesuai gambar */
     padding: 60px 80px 30px 80px;
