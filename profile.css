@@ -216,6 +216,23 @@ body {
   color: #fff;
 }
 
+.footer-contact p {
+    margin: 2px 0;
+}
+
+.footer-contact strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+/* Memastikan area brand memiliki ruang yang cukup */
+.footer-brand {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Styling Footer Utama */
 .main-footer {
     background-color: #b7b390; /* Warna dasar sesuai gambar */
