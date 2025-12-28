@@ -1,20 +1,22 @@
 /* Warna dasar diambil dari contoh dashboard hijau yang umum digunakan untuk UI modern [web:3][web:8] */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+<<<<<<< HEAD
     color: #729660;
     background-color: #fefae0;
+=======
+    color: #0a400c;
+>>>>>>> 9d5a01419210e8ef0d5f51ba6b24263136f3b58b
 }
-
 .navbar {
-    background: linear-gradient( #b1ab86 0%, #a8a072 100%);
+    background: linear-gradient(135deg, #b1ab86 0%, #a8a072 100%);
     color: #0a400c;
     padding: 1rem 2rem;
     display: flex;
@@ -54,7 +56,6 @@ body {
     background: rgba(255,255,255,0.2);
     border-radius: 5px;
 }
-
 .logo {
   font-size: 20px;
   font-weight: 600;
@@ -220,6 +221,9 @@ body {
   color: #fff;
 }
 
+.footer-contact {
+    margin-top: 20px;
+}
 .footer-contact p {
     margin: 2px 0;
 }
@@ -229,7 +233,6 @@ body {
     margin-bottom: 5px;
     font-size: 15px;
 }
-
 /* Memastikan area brand memiliki ruang yang cukup */
 .footer-brand {
     max-width: 300px;
