@@ -8,12 +8,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-<<<<<<< HEAD
-    color: #729660;
-    background-color: #fefae0;
-=======
     color: #0a400c;
->>>>>>> 9d5a01419210e8ef0d5f51ba6b24263136f3b58b
 }
 .navbar {
     background: linear-gradient(135deg, #b1ab86 0%, #a8a072 100%);
